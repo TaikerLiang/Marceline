@@ -1,0 +1,39 @@
+{{!< default}}
+
+<header class="masthead" {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <div class="header-wrapper">
+        {{#if @blog.logo}}<figure class="logo">
+            <a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}"></a>
+        </figure>{{/if}}
+        <div class="title">
+            <a href="{{@blog.url}}">
+                <h1>{{@blog.title}}</h1>
+            </a>
+            <p>{{@blog.description}}</p>
+            <div class="line"></div>
+        </div>
+
+        <div class="bottom">
+            {{#if @blog.navigation}}
+                {{navigation}}
+            {{/if}}
+        </div>
+    </div>
+</header>
+
+<section class="container">
+    <article class="{{post_class}} single">
+        <header class="header-post">
+            {{#get "posts" limit="all" include="tags,author"}}
+                {{#foreach posts}}
+                    <header class="header-post">
+                        <span class="meta-post">
+                            <time datetime="{{date format='DD-MM-YYYY'}}">{{date format="DD MMM YYYY"}}</time>
+                        </span>
+                        <a href="{{url}}"><h2 class="title-post">{{{title}}}</h2></a>
+                    </header>
+                {{/foreach}}
+            {{/get}}
+        </header>
+    </article>
+</section>
