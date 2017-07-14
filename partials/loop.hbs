@@ -4,15 +4,15 @@
         <header class="header-post">
         	<span class="meta-post">
         		<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
-        	</span>          
+        	</span>
         	<h2 class="title-post">
         		<a href="{{url}}">{{{title}}}</a>
     		</h2>
         </header>
 
-    	{{#if image}}
+    	{{#if feature_image}}
 			<figure class="img-post">
-				<img src="{{image}}" alt="">
+				<img src="{{feature_image}}" alt="">
 			</figure>
 		{{/if}}
 

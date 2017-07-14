@@ -3,7 +3,7 @@ Marceline
 
 A happy theme for [Ghost](https://github.com/tryghost/ghost/) by [Germán Encinas](http://germanencinas.com/).
 
-View Marceline in action [here](http://germanencinas.com/marceline).
+View Marceline in action [here](http://blog.taiker.space).
 
 ## Features
 
@@ -28,6 +28,11 @@ If you want to use navigation on ghost in this theme, you need to follow some ru
 
 If you want to hava a archive page(list all article titles of your ghost blog), please follow this [tutorial](https://help.ghost.org/hc/en-us/articles/224936867-Static-Pages) to create a static page for archive page. Then restart your ghost process. (`forever restart index.js`, `service ghost restart`)
 
+View Marceline in action [here](http://blog.taiker.space/archive-post/)
+
+## Reference
+
+* https://github.com/germannencinas/Marceline
 
 ## License
 

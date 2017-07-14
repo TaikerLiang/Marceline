@@ -2,7 +2,7 @@
 
 {{#post}}
 
-<header class="masthead" {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+<header class="masthead" {{#if @blog.cover_image}}" style="background-image: url({{@blog.cover_image}}){{else}}no-cover{{/if}}">
     <div class="header-wrapper">
 	    {{#if @blog.logo}}<figure class="logo">
 			<a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}"></a>
@@ -23,11 +23,11 @@
 </header>
 
 <section class="container">
-  
+
 	<article class="{{post_class}} single">
         <header class="header-post">
       		<h2 class="title-post">{{{title}}}</h2>
-        </header>		
+        </header>
         <section class="content-post">
 			{{content}}
 		</section>
